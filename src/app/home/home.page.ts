@@ -12,7 +12,7 @@ export class HomePage {
   constructor(private router: Router ) {}
 
   gotoRute() {
-    this.router.navigateByUrl('/rute1');
+    this.router.navigateByUrl('/rute111');
 
   }
 }
