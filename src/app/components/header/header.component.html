@@ -6,5 +6,9 @@
     
     <ion-title text-capitalize>{{ title }}</ion-title>
 
+    <ion-button slot="end" (click)="presentAlert()" color="medium" fill="clear" *ngIf="checkMainPage=='true'">
+      <ion-icon name="alert-circle-outline"></ion-icon>
+    </ion-button>
+
   </ion-toolbar>
 </ion-header>
