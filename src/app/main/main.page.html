@@ -11,15 +11,15 @@
 
 <app-header title="Main Page" checkMainPage="true"></app-header>
 
-<ion-content>
-  <ion-card>
+<ion-content class="body-main-page ">
+  <ion-card class="ion-card-main-page ">
     <ion-card-header>
-      <ion-card-title class="ion-text-center">Triana</ion-card-title>
+      <ion-card-title class="ion-text-center" color="light">Triana</ion-card-title>
     </ion-card-header>
     
     <ion-card-content>
       <ion-list>
-        <ion-item *ngFor="let c of components"
+        <ion-item *ngFor="let c of componentsTriana"
                   [routerLink]="c.redirecTo" detail>
     
           <ion-icon slot="start" [name]="c.icon"></ion-icon>
@@ -29,7 +29,21 @@
     </ion-card-content>
   </ion-card>
 
-  
-  
+  <ion-card class="ion-card-main-page ">
+    <ion-card-header>
+      <ion-card-title class="ion-text-center" color="light">Vegueta</ion-card-title>
+    </ion-card-header>
+    
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let c of componentsVegueta"
+                  [routerLink]="c.redirecTo" detail>
+    
+          <ion-icon slot="start" [name]="c.icon"></ion-icon>
+          <ion-label>{{ c.name }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

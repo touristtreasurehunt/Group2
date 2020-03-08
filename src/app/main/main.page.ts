@@ -7,16 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
-  components: ComponentMainPage[] = [
+  componentsTriana: ComponentMainPage[] = [
     {
       icon: 'walk',
       name: 'Route 1',
-      redirecTo: '/home' 
+      redirecTo: '/home'
     },
     {
       icon: 'walk',
       name: 'Route 2',
-      redirecTo: '/home' 
+      redirecTo: '/home'
+    }
+  ];
+
+  componentsVegueta: ComponentMainPage[] = [
+    {
+      icon: 'walk',
+      name: 'Route 1',
+      redirecTo: '/home'
+    },
+    {
+      icon: 'walk',
+      name: 'Route 2',
+      redirecTo: '/home'
     }
   ];
 
