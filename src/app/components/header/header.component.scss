@@ -20,7 +20,12 @@
     --ion-color-secondary-tint: #50c8ff;
 }
 
+.ion-back-button-header {
+    color: white;
+    font-size: 10px;
+}
+
 .ion-toolbar-no-land-page {
-    --background: #1F4B13;
+    --background: var(--tvb-color-primary);
 }
 
