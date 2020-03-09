@@ -13,7 +13,6 @@ import { IonicModule } from '@ionic/angular';
   exports: [
     HeaderComponent
   ],
-  
   imports: [
     CommonModule,
     IonicModule

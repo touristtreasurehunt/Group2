@@ -7,9 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Rute123Page implements OnInit {
 
+  ComponentRoute123: ComponentRoute[] = [
+    {
+      answer: 'lorem1',
+      redirecTo: '/src/app/rute112'
+    },
+    {
+      answer: 'lorem2',
+      redirecTo: '/src/app/rute112'
+    },
+    {
+      answer: 'lorem3',
+      redirecTo: '/src/app/rute112'
+    },
+    {
+      answer: 'lorem4',
+      redirecTo: '/src/app/rute112'
+    }
+  ];
   constructor() { }
 
   ngOnInit() {
   }
 
+}
+
+interface ComponentRoute {
+  answer: string;
+  redirecTo: string;
 }

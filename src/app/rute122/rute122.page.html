@@ -12,28 +12,17 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Multiple Selection
-      </ion-label>
-    </ion-list-header>
-
-    <ion-item>
-      <ion-label>Toppings</ion-label>
-      <ion-select multiple="true" cancelText="Nah" okText="Okay!">
-        <ion-select-option value="bacon">Bacon</ion-select-option>
-        <ion-select-option value="olives">Black Olives</ion-select-option>
-        <ion-select-option value="xcheese">Extra Cheese</ion-select-option>
-        <ion-select-option value="peppers">Green Peppers</ion-select-option>
-        <ion-select-option value="mushrooms">Mushrooms</ion-select-option>
-        <ion-select-option value="onions">Onions</ion-select-option>
-        <ion-select-option value="pepperoni">Pepperoni</ion-select-option>
-        <ion-select-option value="pineapple">Pineapple</ion-select-option>
-        <ion-select-option value="sausage">Sausage</ion-select-option>
-        <ion-select-option value="Spinach">Spinach</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</ion-card-title>
+    </ion-card-header>
+  
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let c of ComponentRoute122" [routerLink]="c.redirecTo">{{c.answer}}</ion-item>
+        </ion-list>
+      </ion-card-content>
+  
+  </ion-card>
 
 </ion-content>
