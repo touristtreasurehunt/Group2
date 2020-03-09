@@ -11,12 +11,12 @@ export class MainPage implements OnInit {
     {
       icon: 'walk',
       name: 'Route 1',
-      redirecTo: '/home'
+      redirecTo: '/rute111'
     },
     {
       icon: 'walk',
       name: 'Route 2',
-      redirecTo: '/home'
+      redirecTo: '/rute121'
     }
   ];
 
@@ -24,12 +24,12 @@ export class MainPage implements OnInit {
     {
       icon: 'walk',
       name: 'Route 1',
-      redirecTo: '/home'
+      redirecTo: '/rute211'
     },
     {
       icon: 'walk',
       name: 'Route 2',
-      redirecTo: '/home'
+      redirecTo: '/rute221'
     }
   ];
 
