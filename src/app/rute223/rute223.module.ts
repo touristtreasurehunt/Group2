@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { Rute223Page } from './rute223.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    Rute223PageRoutingModule
+    Rute223PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Rute223Page]
 })
