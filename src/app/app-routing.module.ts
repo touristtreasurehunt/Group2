@@ -5,6 +5,10 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+  {
     path: 'rute111',
     loadChildren: () => import('./rute111/rute111.module').then( m => m.Rute111PageModule)
   },
@@ -52,7 +56,7 @@ const routes: Routes = [
     path: 'rute223',
     loadChildren: () => import('./rute223/rute223.module').then( m => m.Rute223PageModule)
   },
-  ];
+  ]
 
 @NgModule({
   imports: [
