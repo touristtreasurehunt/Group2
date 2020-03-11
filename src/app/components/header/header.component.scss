@@ -29,3 +29,7 @@
     // --background: var(--tvb-color-primary);
     --background: var(--tvb-color-header);
 }
+
+.ion-toolbar-no-land-page, span {
+    color: var(--tvb-color-header);;
+}

@@ -8,6 +8,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class HeaderComponent implements OnInit {
 
+  @Input() backButton: string;
   @Input() title: string;
   @Input() checkMainPage: string;
 
