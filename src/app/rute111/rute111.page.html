@@ -1,22 +1,53 @@
-<app-header title="RouteGame1"></app-header>
+<app-header title="Catedral"></app-header>
 
 <ion-content> 
   <ion-card>
+    <!-- <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>  -->
     <img src="../../assets/catedral.jpg" alt="">
-    <ion-card-header>
-      <ion-card-title>Catedral</ion-card-title>
-    </ion-card-header> 
+    <ion-card-content>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perspiciatis corporis nam ex sapiente beatae provident suscipit consequuntur molestiae nobis?
+
+    <ion-toolbar>
+      <ion-buttons collapse="true">
+        <ion-button>
+          <ion-icon slot="icon-only" name="star"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Collapsible Buttons</ion-title>
+    </ion-toolbar>
+    </ion-card-content>
   </ion-card>
 
 <ion-card>
-  <ion-card-header>
+  <ion-card-header class="ion-card-header-routes">
     <ion-card-title>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</ion-card-title>
   </ion-card-header>
 
     <ion-card-content>
-      <ion-list>
+      <!-- <ion-list>
         <ion-item *ngFor="let c of ComponentRoute111" [routerLink]="c.redirecTo">{{c.answer}}</ion-item>
-      </ion-list>
+      </ion-list> -->
+
+      <ion-grid class="ion-grid-routes">
+        <ion-row>
+          <ion-col>
+            <ion-button color="light" expand="full">Light</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="light" expand="full">Light</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="light" expand="full">Light</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="light" expand="full">Light</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card-content>
 
 </ion-card>
