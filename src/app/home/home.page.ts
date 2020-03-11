@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { from } from 'rxjs';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,12 +10,26 @@ import { from } from 'rxjs';
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   gotoDetails() {
+    console.log("hello")
     this.router.navigateByUrl('/main');
 
   }
-}
 
-let triggerButton = document.getElementsByClassName('')
+  start() {
+    let triggerButton = document.getElementById('triggerButton');
+    let triggerTop = document.getElementById('triggerTop');
+    let triggerBottom = document.getElementById('triggerBottom');
+    triggerButton.style.animationPlayState = 'running';
+    triggerTop.style.animationPlayState = 'running';
+    triggerBottom.style.animationPlayState = 'running';
+
+    setTimeout(() => {
+      this.gotoDetails();
+    }, 3000);
+    // this.gotoDetails();
+  }
+
+}
