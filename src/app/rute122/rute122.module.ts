@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { Rute122PageRoutingModule } from './rute122-routing.module';
 
 import { Rute122Page } from './rute122.page';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Rute122PageRoutingModule
+    Rute122PageRoutingModule,
+    ComponentsModule
   ],
   declarations: [Rute122Page]
 })
