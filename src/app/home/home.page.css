@@ -44,8 +44,8 @@ ion-content ion-toolbar {
           animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .bottom {
@@ -60,8 +60,8 @@ ion-content ion-toolbar {
           animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .startbutton {
@@ -82,8 +82,8 @@ ion-content ion-toolbar {
           animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .startbutton h1 {

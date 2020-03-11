@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { from } from 'rxjs';
 import { Router } from '@angular/router';
+import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions/ngx';
+
+
+
 
 
 @Component({
@@ -10,11 +14,12 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { } 
 
   gotoDetails() {
     console.log("hello")
     this.router.navigateByUrl('/main');
+    
 
   }
 
@@ -28,8 +33,8 @@ export class HomePage {
 
     setTimeout(() => {
       this.gotoDetails();
-    }, 3000);
-    // this.gotoDetails();
+    }, 1500);
+  
   }
 
 }
