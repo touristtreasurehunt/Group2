@@ -10,19 +10,19 @@ export class Rute123Page implements OnInit {
   ComponentRoute123: ComponentRoute[] = [
     {
       answer: 'lorem1',
-      redirecTo: '/src/app/rute112'
+      redirecTo: '/ruteFinaly'
     },
     {
       answer: 'lorem2',
-      redirecTo: '/src/app/rute112'
+      redirecTo: '/ruteFinaly'
     },
     {
       answer: 'lorem3',
-      redirecTo: '/src/app/rute112'
+      redirecTo: '/ruteFinaly'
     },
     {
       answer: 'lorem4',
-      redirecTo: '/src/app/rute112'
+      redirecTo: '/ruteFinaly'
     }
   ];
   constructor() { }
