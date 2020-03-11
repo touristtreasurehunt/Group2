@@ -75,11 +75,15 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
+
+  /** Our added colors **/
   --tvb-color-primary: #A50312;
   --tvb-color-secondary: #034AA6;
   --tvb-color-tertiary: #079DD8;
   --tvb-color-text: #FEFEFF;
   --tvb-color-contrast: #A7763C;
+
+  --tvb-color-header: #023474;
 }
 
 @media (prefers-color-scheme: dark) {

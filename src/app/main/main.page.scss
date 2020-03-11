@@ -1,17 +1,20 @@
-.body-main-page {
-    --background: #9AA896;
-    --border-width: 20px;
-    --border-style: solid;
-    --border-color: red;
+// .body-main-page {
+//     --background: white;
+// }
+
+.ion-card-main-page {
+    --background: var(--tvb-color-secondary);
+    border: 4px var(--tvb-color-contrast) solid;
+    box-shadow: 0px 13px 35px -6px var(--tvb-color-contrast);
+    margin-bottom: 2rem;
 }
 
-.ion-card-main-page, .ion-card-main-page ion-card-content {
-    --background: #603407;
+
+.ion-list-main-page {
+    background-color: var(--tvb-color-text);
+    border-radius: 10px;
 }
 
-
-
-.ion-list-main-page, .ion-list-main-page ion-item {
-    background-color: red;
-    --background: red
+.ion-list-main-page ion-item {
+    --background: var(--tvb-color-text)
 }
