@@ -1,52 +1,30 @@
 <app-header backButton="true" title="Catedral"></app-header>
 
-<ion-content> 
-  <ion-card>
+<ion-content class="ion-content-routes"> 
+  <ion-card class="animated fadeIn">
     <!-- <ion-card-header>
       <ion-card-title></ion-card-title>
     </ion-card-header>  -->
     <img src="../../assets/catedral.jpg" alt="">
-    <ion-card-content class="ion-card-content-description">
+    <ion-card-content>
       <app-descriptionroutes descriptionFuction='descriptionRoute111'></app-descriptionroutes>
     </ion-card-content>
   </ion-card>
 
-<ion-card>
+<ion-card class="animated zoomIn">
   <ion-card-header class="ion-card-header-routes">
     <ion-card-title>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</ion-card-title>
   </ion-card-header>
 
     <ion-card-content class="ion-card-content-routes">
-      <!-- <ion-list>
-        <ion-item *ngFor="let c of ComponentRoute111" [routerLink]="c.redirecTo">{{c.answer}}</ion-item>
-      </ion-list> -->
 
       <ion-grid class="ion-grid-routes">
-        <ion-row>
+        <ion-row *ngFor="let c of ComponentRoute121">
           <ion-col>
-            <ion-button >LightLightLightLightLightLightLightLightLight</ion-button>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-button  >Light</ion-button>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-button  >Light</ion-button>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            <ion-button >Light</ion-button>
+            <ion-button [routerLink]="c.redirecTo">{{c.answer}}</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
-
-      <!-- <div>
-        <ion-button id="test">Test</ion-button>
-      </div> -->
     </ion-card-content>
 
 </ion-card>
