@@ -55,7 +55,11 @@ const routes: Routes = [
   {
     path: 'rute223',
     loadChildren: () => import('./rute223/rute223.module').then( m => m.Rute223PageModule)
+  },  {
+    path: 'score',
+    loadChildren: () => import('./score/score.module').then( m => m.ScorePageModule)
   },
+
   ]
 
 @NgModule({
