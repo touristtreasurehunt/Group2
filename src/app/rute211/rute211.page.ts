@@ -13,7 +13,7 @@ export class Rute211Page implements OnInit {
       redirecTo: '/rute212'
     },
     {
-      answer: 'lorem2',
+      answer: 'Summer solstice',
       redirecTo: '/rute212'
     },
     {
