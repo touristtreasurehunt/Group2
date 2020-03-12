@@ -1,3 +1,7 @@
+.no-scroll {
+  --overflow: hidden;
+}
+
 #container {
   text-align: center;
   position: absolute;
@@ -28,17 +32,209 @@ ion-content ion-toolbar {
   --background: translucent;
 }
 
-.test {
-  width: 100px;
-  height: 100px;
-  background-color: green;
+.top {
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--tvb-color-tertiary);
+  z-index: 100;
+  -webkit-animation-name: top-ani;
+          animation-name: top-ani;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.bottom {
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--tvb-color-secondary);
+  position: absolute;
+  -webkit-animation-name: bot-ani;
+          animation-name: bot-ani;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.startbutton {
+  width: 250px;
+  height: 250px;
+  background-color: var(--tvb-color-primary);
   border-radius: 100%;
+  left: 50%;
   text-align: center;
   position: absolute;
-  left: 0;
-  right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: solid 30px var(--tvb-color-secondary);
+  -webkit-animation-name: roll-button-ani;
+          animation-name: roll-button-ani;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.startbutton h1 {
+  color: var(--tvb-color-text);
+}
+
+@-webkit-keyframes top-ani {
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@keyframes top-ani {
+  100% {
+    margin-top: -100%;
+  }
+}
+
+@-webkit-keyframes bot-ani {
+  100% {
+    margin-bottom: -100%;
+  }
+}
+
+@keyframes bot-ani {
+  100% {
+    margin-bottom: -100%;
+  }
+}
+
+@-webkit-keyframes roll-button-ani {
+  20% {
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    border-radius: 20%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes roll-button-ani {
+  20% {
+    opacity: 1;
+    width: 100%;
+    height: 50%;
+    border-radius: 20%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#leg_x5F_far {
+  -webkit-animation-name: leg_far_ani;
+          animation-name: leg_far_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 245.742px 288.063px;
+          transform-origin: 245.742px 288.063px;
+}
+
+@-webkit-keyframes leg_far_ani {
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+@keyframes leg_far_ani {
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+#leg_x5F_close {
+  -webkit-animation-name: leg_close_ani;
+          animation-name: leg_close_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 250.5px 294.358px;
+          transform-origin: 250.5px 294.358px;
+}
+
+@-webkit-keyframes leg_close_ani {
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@keyframes leg_close_ani {
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+#armphone_group {
+  -webkit-animation-name: arm_far_ani;
+          animation-name: arm_far_ani;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 236.294px 167.776px;
+          transform-origin: 236.294px 167.776px;
+}
+
+@-webkit-keyframes arm_far_ani {
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes arm_far_ani {
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+#arm_x5F_close {
+  -webkit-animation-name: arm_close_ani;
+          animation-name: arm_close_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 236.294px 167.776px;
+          transform-origin: 236.294px 167.776px;
+}
+
+@-webkit-keyframes arm_close_ani {
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@keyframes arm_close_ani {
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
 }
 /*# sourceMappingURL=home.page.css.map */
