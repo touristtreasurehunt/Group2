@@ -77,16 +77,21 @@ ion-content ion-toolbar {
   border: solid 30px var(--tvb-color-secondary);
 
   animation-name: roll-button-ani;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  // animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   animation-play-state: paused;
-
-
-
+  
 h1{
   color: var(--tvb-color-text);
 }
+}
+//////////////////////////////////
+
+@keyframes glow{
+  0% { box-shadow: 0 0 -10px var(--tvb-color-text) }
+  40% { box-shadow: 0 0 20px var(--tvb-color-text) }
+  60% { box-shadow: 0 0 20px var(--tvb-color-text) }
+  100% { box-shadow: 0 0 -10px var(--tvb-color-text) }
 }
 
 
@@ -101,17 +106,82 @@ h1{
   }
 
   @keyframes roll-button-ani{
-20%{
-  opacity: 1;
-  width: 100%;
-  height: 50%;
-  border-radius: 20%;
-  
-}
+   
+
+    20%{
+      opacity: 1;
+      width: 100%;
+      height: 50%;
+      border-radius: 40%;
+    }
+
 
     100%{
   opacity: 0;
   }
   }
   
+
+//Stickman animation
+//////////////////////////////////
+#leg_x5F_far{
+  // stroke: darkcyan;
+  animation-name: leg_far_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 245.742px 288.063px;
+  
+}
+@keyframes leg_far_ani{
+50%{transform: rotate(-40deg);
+  
+}
+}
+//////////////////////////////////
+#leg_x5F_close{
+  // stroke: darkcyan;
+  animation-name: leg_close_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 250.5px 294.358px;
+  
+}
+
+@keyframes leg_close_ani{
+  50%{transform: rotate(40deg);
+      
+  }
+  }
+//////////////////////////////////
+#armphone_group{
+  // stroke: darkcyan;
+  animation-name: arm_far_ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 236.294px 167.776px;
+  
+}
+
+@keyframes arm_far_ani{
+  50%{transform: rotate(-5deg);
+      
+  }
+  }
+//////////////////////////////////
+
+#arm_x5F_close{
+  // stroke: darkcyan;
+  animation-name: arm_close_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 236.294px 167.776px;
+  
+}
+
+@keyframes arm_close_ani{
+  50%{transform: rotate(-25deg);
+      
+  }
+  }
+//////////////////////////////////
 

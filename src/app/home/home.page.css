@@ -137,4 +137,104 @@ ion-content ion-toolbar {
     opacity: 0;
   }
 }
+
+#leg_x5F_far {
+  -webkit-animation-name: leg_far_ani;
+          animation-name: leg_far_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 245.742px 288.063px;
+          transform-origin: 245.742px 288.063px;
+}
+
+@-webkit-keyframes leg_far_ani {
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+@keyframes leg_far_ani {
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+}
+
+#leg_x5F_close {
+  -webkit-animation-name: leg_close_ani;
+          animation-name: leg_close_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 250.5px 294.358px;
+          transform-origin: 250.5px 294.358px;
+}
+
+@-webkit-keyframes leg_close_ani {
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@keyframes leg_close_ani {
+  50% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+#armphone_group {
+  -webkit-animation-name: arm_far_ani;
+          animation-name: arm_far_ani;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 236.294px 167.776px;
+          transform-origin: 236.294px 167.776px;
+}
+
+@-webkit-keyframes arm_far_ani {
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes arm_far_ani {
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+#arm_x5F_close {
+  -webkit-animation-name: arm_close_ani;
+          animation-name: arm_close_ani;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: 236.294px 167.776px;
+          transform-origin: 236.294px 167.776px;
+}
+
+@-webkit-keyframes arm_close_ani {
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
+
+@keyframes arm_close_ani {
+  50% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+}
 /*# sourceMappingURL=home.page.css.map */
