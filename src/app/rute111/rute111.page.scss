@@ -1,20 +1,40 @@
-.ion-card-header-routes{
-    padding-bottom: 13px;
+.ion-content-routes {
+    --background: var(--tvb-color-body);
 }
 
+// ion-content {
+//     --background: yellow;
+// }
+
+/* -------------------------------------------------------------------------- */
+/*                               ion-card-routes                              */
+/* -------------------------------------------------------------------------- */
 .ion-card-header-routes ion-card-title {
     font-size: 15px;
 }
 
-.ion-grid-routes ion-col ion-button {
-    border-radius: 40px;
+.ion-card-header-routes {
+    padding-bottom: 8px;
 }
 
-.ion-grid-routes {
-    padding: 0px;
-}
-
-ion-card-content{
+.ion-card-content-routes {
     font-size: 0.7em;
     padding: 10px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               ion-grid-routes                              */
+/* -------------------------------------------------------------------------- */
+.ion-grid-routes {
+    padding-bottom: 12px;
+}
+
+.ion-grid-routes ion-button {
+    --border-width: 2px;
+    --border-style: solid;
+    --border-color: var(--tvb-color-border);
+    --border-radius: 5px;
+    --background: var(--tvb-color-tertiary);
+    width: 100%;
+}
+

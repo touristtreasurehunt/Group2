@@ -1,23 +1,54 @@
-<app-header title="RouteGame2"></app-header>
+<app-header backButton="true" title="Catedral"></app-header>
 
-<ion-content>
+<ion-content> 
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>kkkk</ion-card-title>
-    </ion-card-header>
+    <!-- <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>  -->
+    <img src="../../assets/catedral.jpg" alt="">
+    <ion-card-content class="ion-card-content-description">
+      <app-descriptionroutes descriptionFuction='descriptionRoute111'></app-descriptionroutes>
+    </ion-card-content>
   </ion-card>
 
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</ion-card-title>
-    </ion-card-header>
-  
-      <ion-card-content>
-        <ion-list>
-          <ion-item *ngFor="let c of ComponentRoute121" [routerLink]="c.redirecTo">{{c.answer}}</ion-item>
-        </ion-list>
-      </ion-card-content>
-  
-  </ion-card>
+<ion-card>
+  <ion-card-header class="ion-card-header-routes">
+    <ion-card-title>Lorem ipsum dolor sit amet consectetur, adipisicing elit?</ion-card-title>
+  </ion-card-header>
 
-</ion-content>
+    <ion-card-content class="ion-card-content-routes">
+      <!-- <ion-list>
+        <ion-item *ngFor="let c of ComponentRoute111" [routerLink]="c.redirecTo">{{c.answer}}</ion-item>
+      </ion-list> -->
+
+      <ion-grid class="ion-grid-routes">
+        <ion-row>
+          <ion-col>
+            <ion-button >LightLightLightLightLightLightLightLightLight</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button  >Light</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button  >Light</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button >Light</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <!-- <div>
+        <ion-button id="test">Test</ion-button>
+      </div> -->
+    </ion-card-content>
+
+</ion-card>
+
+</ion-content> 
