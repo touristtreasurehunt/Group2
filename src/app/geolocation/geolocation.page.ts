@@ -47,6 +47,7 @@ export class GeolocationPage {
             L.latLng(e.latitude, e.longitude),
             L.latLng(this.coordinates[0], this.coordinates[1])
           ], routeWhileDragging: true
+
         }).addTo(this.contentMap);
 
         //
