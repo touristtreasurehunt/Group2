@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { from } from 'rxjs';
 import { Router } from '@angular/router';
-import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions/ngx';
 
 
 
@@ -14,19 +13,17 @@ import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/na
 })
 export class HomePage {
 
-  constructor(private router: Router) { } 
+  constructor(private router: Router) { }
 
   gotoDetails() {
-    console.log("hello")
+    console.log('hello');
     this.router.navigateByUrl('/main');
-    
-
   }
 
   start() {
-    let triggerButton = document.getElementById('triggerButton');
-    let triggerTop = document.getElementById('triggerTop');
-    let triggerBottom = document.getElementById('triggerBottom');
+    const triggerButton = document.getElementById('triggerButton');
+    const triggerTop = document.getElementById('triggerTop');
+    const triggerBottom = document.getElementById('triggerBottom');
     triggerButton.style.animationPlayState = 'running';
     triggerTop.style.animationPlayState = 'running';
     triggerBottom.style.animationPlayState = 'running';
@@ -34,7 +31,7 @@ export class HomePage {
     setTimeout(() => {
       this.gotoDetails();
     }, 1500);
-  
+
   }
 
 }
