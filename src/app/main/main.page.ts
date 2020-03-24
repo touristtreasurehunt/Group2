@@ -11,7 +11,7 @@ export class MainPage implements OnInit {
     {
       icon: 'walk',
       name: 'Route 1',
-      redirecTo: '/rute111'
+      redirecTo: '/geolocation'
     },
     {
       icon: 'walk',
