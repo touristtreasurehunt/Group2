@@ -28,19 +28,19 @@ export class GeolocationPage {
     });
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.contentMap);
-    const marcador = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
-    let distancia: any;
+    const mark = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
+    let distance: any;
 
     this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationfound', (e: any) => {
       if (this.position !== undefined) {
         this.position.setLatLng([e.latitude, e.longitude]);
         this.contentMap.setView([e.latitude, e.longitude], 30);
-        // calculamos la distancia
-        distancia = Math.round(this.contentMap.distance([e.latitude, e.longitude], marcador.getLatLng()));
-        // mostramos la distancia
-        this.position.bindPopup('Estas a ' + distancia + ' metros del objetivo.').openPopup();
+        // calculate the distance
+        distance = Math.round(this.contentMap.distance([e.latitude, e.longitude], mark.getLatLng()));
+        // show the distance
+        this.position.bindPopup('You are ' + distance + ' metres from the target.').openPopup();
         //
-        // pintamos el recorrido
+        // draw the way
 
         L.Routing.control({
           waypoints: [
