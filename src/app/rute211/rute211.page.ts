@@ -9,7 +9,11 @@ export class Rute211Page implements OnInit {
 
   ComponentRoute211: ComponentRoute[] = [
     {
-      answer: 'lorem1',
+      answer: 'Winter solstice',
+      redirecTo: '/rute212'
+    },
+    {
+      answer: 'Spring solstice',
       redirecTo: '/rute212'
     },
     {
@@ -17,11 +21,7 @@ export class Rute211Page implements OnInit {
       redirecTo: '/rute212'
     },
     {
-      answer: 'lorem3',
-      redirecTo: '/rute212'
-    },
-    {
-      answer: 'lorem4',
+      answer: 'Autumn solstice',
       redirecTo: '/rute212'
     }
   ];
