@@ -15,8 +15,6 @@ export class GeolocationPage {
   contentMap: any;
   position: any;
   coordinates = [28.1028, -15.4131];
-  // distance: any;
-
 
   goToHome() {
     this.router.navigate(['/home']);
@@ -33,7 +31,7 @@ export class GeolocationPage {
     const mark = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
     let distance: any;
 
-    this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationFound', (e: any) => {
+    this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationfound', (e: any) => {
       if (this.position !== undefined) {
         this.position.setLatLng([e.latitude, e.longitude]);
         this.contentMap.setView([e.latitude, e.longitude], 30);
@@ -43,6 +41,12 @@ export class GeolocationPage {
         this.position.bindPopup('You are ' + distance + ' metres from the target.').openPopup();
         //
         // draw the way
+
+        setTimeout(() => {
+            if (distance <= 3000) {
+              this.router.navigate(['/rute111']);
+            }
+        }, 2000);
 
         L.Routing.control({
           waypoints: [
