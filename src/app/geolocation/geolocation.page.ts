@@ -15,6 +15,8 @@ export class GeolocationPage {
   contentMap: any;
   position: any;
   coordinates = [28.1028, -15.4131];
+  distance: any;
+
 
   goToHome() {
     this.router.navigate(['/home']);
@@ -29,16 +31,16 @@ export class GeolocationPage {
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.contentMap);
     const mark = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
-    let distance: any;
+    // let distance: any;
 
-    this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationfound', (e: any) => {
+    this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationFound', (e: any) => {
       if (this.position !== undefined) {
         this.position.setLatLng([e.latitude, e.longitude]);
         this.contentMap.setView([e.latitude, e.longitude], 30);
         // calculate the distance
-        distance = Math.round(this.contentMap.distance([e.latitude, e.longitude], mark.getLatLng()));
+        this.distance = Math.round(this.contentMap.distance([e.latitude, e.longitude], mark.getLatLng()));
         // show the distance
-        this.position.bindPopup('You are ' + distance + ' metres from the target.').openPopup();
+        this.position.bindPopup('You are ' + this.distance + ' metres from the target.').openPopup();
         //
         // draw the way
 

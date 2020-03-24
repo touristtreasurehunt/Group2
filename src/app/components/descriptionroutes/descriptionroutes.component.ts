@@ -8,7 +8,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class DescriptionroutesComponent implements OnInit {
 
-  @Input() descriptionFuction: string;
+  @Input() descriptionFunction: string;
 
   constructor(public descriptionRoute: AlertController) {}
 
