@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { GeolocationPage } from './geolocation.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    GeolocationPageRoutingModule
+    GeolocationPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [GeolocationPage]
 })

@@ -1,3 +1,4 @@
+import { GeolocationComponent } from './geolocation/geolocation.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
@@ -9,12 +10,14 @@ import { DescriptionroutesComponent } from './descriptionroutes/descriptionroute
 @NgModule({
   declarations: [
     HeaderComponent,
-    DescriptionroutesComponent
+    DescriptionroutesComponent,
+    GeolocationComponent
   ],
 
   exports: [
     HeaderComponent,
-    DescriptionroutesComponent
+    DescriptionroutesComponent,
+    GeolocationComponent
   ],
   imports: [
     CommonModule,
