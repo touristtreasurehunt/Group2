@@ -10,19 +10,19 @@ export class Rute211Page implements OnInit {
   ComponentRoute211: ComponentRoute[] = [
     {
       answer: 'Winter solstice',
-      redirecTo: '/rute212'
+      redirecTo: '/geolocation212'
     },
     {
       answer: 'Spring solstice',
-      redirecTo: '/rute212'
+      redirecTo: '/geolocation212'
     },
     {
       answer: 'Summer solstice',
-      redirecTo: '/rute212'
+      redirecTo: '/geolocation212'
     },
     {
       answer: 'Autumn solstice',
-      redirecTo: '/rute212'
+      redirecTo: '/geolocation212'
     }
   ];
   constructor() { }

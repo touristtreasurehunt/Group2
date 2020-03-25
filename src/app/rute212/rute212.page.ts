@@ -10,19 +10,19 @@ export class Rute212Page implements OnInit {
   ComponentRoute212: ComponentRoute[] = [
     {
       answer: 'Juan Rejón',
-      redirecTo: '/rute213'
+      redirecTo: '/geolocation213'
     },
     {
       answer: 'Dean Bermúdez',
-      redirecTo: '/rute213'
+      redirecTo: '/geolocation213'
     },
     {
       answer: 'Luján Pérez',
-      redirecTo: '/rute213'
+      redirecTo: '/geolocation213'
     },
     {
       answer: 'Artemi Semidán',
-      redirecTo: '/rute213'
+      redirecTo: '/geolocation213'
     }
   ];
 
