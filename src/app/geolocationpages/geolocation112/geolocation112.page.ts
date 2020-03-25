@@ -1,3 +1,4 @@
+import { from } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as L from 'leaflet';
@@ -8,6 +9,7 @@ import 'leaflet-routing-machine';
   templateUrl: './geolocation112.page.html',
   styleUrls: ['./geolocation112.page.scss'],
 })
+
 export class Geolocation112Page implements OnInit {
 
   constructor(private router: Router) { }
@@ -17,19 +19,19 @@ export class Geolocation112Page implements OnInit {
   coordinates = [28.1208, -15.4031];
 
   goToHome() {
-    this.router.navigate(['/geolocation112']);
+    window.location.reload();
   }
 
-  ionViewDidLoad() {
-      this.contentMap = L.map('contentMap', {
+  ionViewDidEnter() {
+    this.contentMap = L.map('contentMap', {
         center: [this.coordinates[0], this.coordinates[1]],
         zoom: 15,
         zoomControl: true
       });
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.contentMap);
-      const mark = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
-      let distance: any;
-      this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationfound', (e: any) => {
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(this.contentMap);
+    const mark = L.marker([this.coordinates[0], this.coordinates[1]], { draggable: false }).addTo(this.contentMap);
+    let distance: any;
+    this.contentMap.locate({ watch: true, setView: true, maxZoom: 16 }).on('locationfound', (e: any) => {
         if (this.position !== undefined) {
           this.position.setLatLng([e.latitude, e.longitude]);
           this.contentMap.setView([e.latitude, e.longitude], 30);
@@ -47,7 +49,7 @@ export class Geolocation112Page implements OnInit {
           }).addTo(this.contentMap);
           //
           setTimeout(() => {
-            if (distance <= 50) {
+            if (distance <= 20000) {
               this.router.navigate(['/rute112']);
             }
         }, 2000);
@@ -61,4 +63,5 @@ export class Geolocation112Page implements OnInit {
   }
 
 }
+
 

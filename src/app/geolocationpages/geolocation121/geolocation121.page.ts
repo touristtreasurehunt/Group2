@@ -17,7 +17,7 @@ export class Geolocation121Page implements OnInit {
   coordinates = [28.1028, -15.4131];
 
   goToHome() {
-    this.router.navigate(['/home']);
+    window.location.reload();
   }
 
   ionViewDidEnter() {
