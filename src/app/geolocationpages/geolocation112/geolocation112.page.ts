@@ -18,8 +18,12 @@ export class Geolocation112Page implements OnInit {
   position: any;
   coordinates = [28.1208, -15.4031];
 
-  goToHome() {
+  reloadMap() {
     window.location.reload();
+  }
+
+  backToQuest() {
+    this.router.navigate(['/rute112']);
   }
 
   ionViewDidEnter() {

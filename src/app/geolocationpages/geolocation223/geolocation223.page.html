@@ -1,8 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>geolocation223</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header backButton="true" title="Museo Canario"></app-header>
 
 <ion-content>
   <div id="contentMap" >
@@ -73,8 +69,14 @@
 </ion-content>
 
 <ion-content>
-<div id="contentButtonMap" class="ion-padding">
-  <ion-button expand="block" (click)="goToHome()">Reload Map</ion-button>
-
-</div>
+  <div id="contentButtonMap" class="ion-padding">
+    <ion-button expand="block" (click)="reloadMap()">Reload Map</ion-button>
+    <ion-button expand="block" (click)="backToQuest()">Back to Quest</ion-button>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <app-tabs routerLink="/main"></app-tabs>
+  </ion-toolbar>
+</ion-footer>
