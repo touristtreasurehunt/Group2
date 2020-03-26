@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { DescriptionroutesComponent } from './descriptionroutes/descriptionroutes.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 
@@ -10,11 +11,13 @@ import { DescriptionroutesComponent } from './descriptionroutes/descriptionroute
   declarations: [
     HeaderComponent,
     DescriptionroutesComponent,
+    TabsComponent
   ],
 
   exports: [
     HeaderComponent,
     DescriptionroutesComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,
