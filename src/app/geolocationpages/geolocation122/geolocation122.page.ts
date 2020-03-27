@@ -14,7 +14,7 @@ export class Geolocation122Page implements OnInit {
 
   contentMap: any;
   position: any;
-  coordinates = [28.1028, -15.4131];
+  coordinates = [28.103367, -15.413801];
 
   reloadMap() {
     window.location.reload();

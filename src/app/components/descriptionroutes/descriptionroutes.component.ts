@@ -26,7 +26,7 @@ export class DescriptionroutesComponent implements OnInit {
 
   async descriptionRoute112() {
     const alert = await this.descriptionRoute.create({
-      header: 'La union y el fénix',
+      header: 'La union y el Fénix',
       subHeader: '',
       // tslint:disable-next-line: max-line-length
       message: '<p>The union and the phoenix was an insurance company of the late nineteenth century (1879). Most of its buildings were crowned with the figure of the abduction of ganymede, a myth that can be seen as allegory to homosexuality and its acceptance by society, since the eagle (phoenix) would represent Zeus or Jupiter, turning the young epheme into his lover and butler after his abduction.</p>',
@@ -38,7 +38,7 @@ export class DescriptionroutesComponent implements OnInit {
 
   async descriptionRoute113() {
     const alert = await this.descriptionRoute.create({
-      header: 'Tranvia La pepa',
+      header: 'Tranvia La Pepa',
       subHeader: '',
       // tslint:disable-next-line: max-line-length
       message: '<p>In 1942, and due to the shortage of fuel due to the 2st world war, the town hall again took old wagons and a steam locomotive back from the old airport station and a steam locomotive that had circulated for a short time.</p>',
