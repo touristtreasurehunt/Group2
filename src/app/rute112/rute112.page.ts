@@ -9,15 +9,15 @@ export class Rute112Page implements OnInit {
 
   ComponentRoute112: ComponentRoute[] = [
     {
-      answer: 'lorem1',
+      answer: 'The union of two insurance brokerages',
       redirecTo: '/geolocation113'
     },
     {
-      answer: 'lorem2',
+      answer: 'Breaking the bindings',
       redirecTo: '/geolocation113'
     },
     {
-      answer: 'lorem3',
+      answer: 'The Rapture of Ganimedes', // correcta
       redirecTo: '/geolocation113'
     },
     {

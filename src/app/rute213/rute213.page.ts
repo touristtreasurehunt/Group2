@@ -9,19 +9,19 @@ export class Rute213Page implements OnInit {
 
   ComponentRoute213: ComponentRoute[] = [
     {
-      answer: 'The study of history',
+      answer: ' Juan Rejón',
       redirecTo: '/score'
     },
     {
-      answer: 'The study of anthropology',
+      answer: 'Christopher Columbus', // correcto
       redirecTo: '/score'
     },
     {
-      answer: 'Promoting letters and the arts',
+      answer: 'Bishop Frías.',
       redirecTo: '/score'
     },
     {
-      answer: 'All are correct',
+      answer: ' Cardinal Cisneros.',
       redirecTo: '/score'
     }
   ];

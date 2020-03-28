@@ -9,19 +9,19 @@ export class Rute113Page implements OnInit {
 
   ComponentRoute113: ComponentRoute[] = [
     {
-      answer: 'lorem1',
+      answer: 'For sharing the name with the president of the government elected at the time.',
       redirecTo: '/score'
     },
     {
-      answer: 'lorem2',
+      answer: 'For sharing the name with the president of the government elected at the time.',
       redirecTo: '/score'
     },
     {
-      answer: 'lorem3',
+      answer: 'For the Day "San José"',
       redirecTo: '/score'
     },
     {
-      answer: 'lorem4',
+      answer: 'Name of first female tram driver',
       redirecTo: '/score'
     }
   ];

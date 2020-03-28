@@ -9,19 +9,19 @@ export class Rute212Page implements OnInit {
 
   ComponentRoute212: ComponentRoute[] = [
     {
-      answer: 'Juan Rejón',
+      answer: 'To collect food.',
       redirecTo: '/geolocation213'
     },
     {
-      answer: 'Dean Bermúdez',
+      answer: 'To give new guidelines sent by the Catholic Monarchs.',
       redirecTo: '/geolocation213'
     },
     {
-      answer: 'Luján Pérez',
+      answer: 'To repair "la Pinta"', // correcta
       redirecTo: '/geolocation213'
     },
     {
-      answer: 'Artemi Semidán',
+      answer: 'To request temporary accommodation until your departure to the "Indies".',
       redirecTo: '/geolocation213'
     }
   ];

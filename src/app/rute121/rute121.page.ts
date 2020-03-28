@@ -9,19 +9,19 @@ export class Rute121Page implements OnInit {
 
   ComponentRoute121: ComponentRoute[] = [
     {
-      answer: 'lorem1',
+      answer: ' It was a Hotel',
       redirecTo: '/geolocation122'
     },
     {
-      answer: 'lorem2',
+      answer: 'It was a library',
       redirecTo: '/geolocation122'
     },
     {
-      answer: 'lorem3',
+      answer: 'It was the residence of a notable of the island',
       redirecTo: '/geolocation122'
     },
     {
-      answer: 'lorem4',
+      answer: 'It was a Theater', // correcta
       redirecTo: '/geolocation122'
     }
   ];
