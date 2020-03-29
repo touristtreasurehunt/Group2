@@ -21,7 +21,7 @@ export class Rute112Page implements OnInit {
       redirecTo: '/geolocation113'
     },
     {
-      answer: 'lorem4',
+      answer: 'Renaissance and Freedom',
       redirecTo: '/geolocation113'
     }
   ];

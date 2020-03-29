@@ -20,7 +20,7 @@ export class Geolocation222Page implements OnInit {
     window.location.reload();
   }
 
-  backToQuest() {
+  goToQuest() {
     this.router.navigate(['/rute222']);
   }
 

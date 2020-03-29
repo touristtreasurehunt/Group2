@@ -20,7 +20,7 @@ export class Geolocation111Page implements OnInit {
     window.location.reload();
   }
 
-  backToQuest() {
+  goToQuest() {
     this.router.navigate(['/rute111']);
   }
 
@@ -56,7 +56,7 @@ export class Geolocation111Page implements OnInit {
 
         //
         setTimeout(() => {
-          if (distance <= 20000) {
+          if (distance <= 50) {
             this.router.navigate(['/rute111']);
           }
       }, 2000);

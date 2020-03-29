@@ -22,7 +22,7 @@ export class Geolocation112Page implements OnInit {
     window.location.reload();
   }
 
-  backToQuest() {
+  goToQuest() {
     this.router.navigate(['/rute112']);
   }
 
@@ -53,7 +53,7 @@ export class Geolocation112Page implements OnInit {
           }).addTo(this.contentMap);
           //
           setTimeout(() => {
-            if (distance <= 20000) {
+            if (distance <= 50) {
               this.router.navigate(['/rute112']);
             }
         }, 2000);

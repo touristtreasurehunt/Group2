@@ -56,7 +56,7 @@ export class Geolocation211Page implements OnInit {
 
         //
         setTimeout(() => {
-          if (distance <= 20000) {
+          if (distance <= 50) {
             this.router.navigate(['/rute211']);
           }
       }, 2000);
