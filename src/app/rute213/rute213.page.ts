@@ -17,11 +17,11 @@ export class Rute213Page implements OnInit {
       redirecTo: '/score'
     },
     {
-      answer: 'Bishop Frías.',
+      answer: 'Bishop Frías',
       redirecTo: '/score'
     },
     {
-      answer: ' Cardinal Cisneros.',
+      answer: ' Cardinal Cisneros',
       redirecTo: '/score'
     }
   ];

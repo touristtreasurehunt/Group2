@@ -17,7 +17,7 @@ export class Rute121Page implements OnInit {
       redirecTo: '/geolocation122'
     },
     {
-      answer: 'It was the residence of a notable of the island',
+      answer: 'It was the residence of a notable',
       redirecTo: '/geolocation122'
     },
     {

@@ -9,19 +9,23 @@ export class Rute123Page implements OnInit {
 
   ComponentRoute123: ComponentRoute[] = [
     {
-      answer: 'Executioners Bridge or Stone Bridge.',
+      answer1: 'Executioners Bridge or',
+      answer2: 'Stone Bridge',
       redirecTo: '/score'
     },
     {
-      answer: 'Passage bridge or Guiniguada Bridge.',
+      answer1: 'Passage bridge or',
+      answer2: 'Guiniguada Bridge',
       redirecTo: '/score'
     },
     {
-      answer: 'Medianías Bridge or Vegueta Bridge.',
+      answer1: 'Medianías Bridge or',
+      answer2: 'Vegueta Bridge',
       redirecTo: '/score'
     },
     {
-      answer: 'Statues Bridge or the Cathedral Bridge.',
+      answer1: 'Statues Bridge or',
+      answer2: 'the Cathedral Bridge',
       redirecTo: '/score'
     }
   ];
@@ -33,6 +37,7 @@ export class Rute123Page implements OnInit {
 }
 
 interface ComponentRoute {
-  answer: string;
+  answer1: string;
+  answer2: string;
   redirecTo: string;
 }

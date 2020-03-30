@@ -9,19 +9,23 @@ export class Rute211Page implements OnInit {
 
   ComponentRoute211: ComponentRoute[] = [
     {
-      answer: 'Gives more resonance to the bells.',
+      answer1: 'Gives more resonance',
+      answer2: 'to the bells',
       redirecTo: '/geolocation212'
     },
     {
-      answer: 'Gain visibility from a greater distance',
+      answer1: 'Gain visibility from',
+      answer2: 'a greater distance',
       redirecTo: '/geolocation212'
     },
     {
-      answer: ' It is tied to the summer solstice', // Correcta
+      answer1: ' It is tied to', // Correcta
+      answer2: 'the summer solstice',
       redirecTo: '/geolocation212'
     },
     {
-      answer: 'Deceive about the interior dimensions of the temple',
+      answer1: 'Deceive about',
+      answer2: 'the interior dimensions',
       redirecTo: '/geolocation212'
     }
   ];
@@ -33,6 +37,7 @@ export class Rute211Page implements OnInit {
 }
 
 interface ComponentRoute {
-  answer: string;
+  answer1: string;
+  answer2: string;
   redirecTo: string;
 }

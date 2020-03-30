@@ -9,19 +9,23 @@ export class Rute122Page implements OnInit {
 
   ComponentRoute122: ComponentRoute[] = [
     {
-      answer: 'By James M. McLaren and Secundino Zuazo Ugalde.',
+      answer1: 'By James M. McLaren and',
+      answer2: 'Secundino Zuazo Ugalde',
       redirecTo: '/geolocation123'
     },
     {
-      answer: 'For the brothers Miguel and Néstor Martín Fernández de la Torre.', // correcta
+      answer1: 'For the brothers Miguel and', // correcta
+      answer2: 'Néstor Martín Fernández de la Torre',
       redirecTo: '/geolocation123'
     },
     {
-      answer: 'By Eduardo Laforet and Carlos Flores López.',
+      answer1: 'By Eduardo Laforet and',
+      answer2: 'Carlos Flores López',
       redirecTo: '/geolocation123'
     },
     {
-      answer: 'By José Blasco Robles and Richard Von Oppel.',
+      answer1: 'By José Blasco Robles and',
+      answer2: 'Richard Von Oppel',
       redirecTo: '/geolocation123'
     }
   ];
@@ -34,6 +38,7 @@ export class Rute122Page implements OnInit {
 }
 
 interface ComponentRoute {
-  answer: string;
+  answer1: string;
+  answer2: string;
   redirecTo: string;
 }
