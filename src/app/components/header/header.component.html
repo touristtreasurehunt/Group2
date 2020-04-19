@@ -1,0 +1,14 @@
+<ion-header class="ion-no-border body-header ">
+  <ion-toolbar class="ion-toolbar-no-land-page">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Back" class="ion-back-button-header" *ngIf="backButton=='true'"></ion-back-button>
+    </ion-buttons>
+    
+    <ion-title class="ion-text-center-header" text-capitalize color="light">{{ title }}</ion-title>
+
+    <ion-button slot="end" (click)="presentAlert()" color="light" fill="clear" *ngIf="checkMainPage=='true'">
+      <ion-icon name="alert-circle-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>

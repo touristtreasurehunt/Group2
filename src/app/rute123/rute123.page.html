@@ -1,0 +1,38 @@
+<app-header backButton="true" title="Puente de Palo (Barranco Guiniguada)"></app-header>
+
+<ion-content class="ion-content-routes"> 
+  <ion-card class="animated fadeIn">
+    <!-- <ion-card-header>
+      <ion-card-title></ion-card-title>
+    </ion-card-header>  -->
+    <img src="../../assets/imgRoutes/puenteDePalos2.jpg" alt="Puente de Palo">
+    <ion-card-content>
+      <app-descriptionroutes descriptionFunction='descriptionRoute123'></app-descriptionroutes>
+    </ion-card-content>
+  </ion-card>
+
+<ion-card class="animated zoomIn">
+  <ion-card-header class="ion-card-header-routes">
+    <ion-card-title>What other names are known for the bridge that was buried to make way for the highway over the Guiniguada ravine?</ion-card-title>
+  </ion-card-header>
+
+    <ion-card-content class="ion-card-content-routes">
+
+      <ion-grid class="ion-grid-routes">
+        <ion-row *ngFor="let c of ComponentRoute123">
+          <ion-col>
+            <ion-button [routerLink]="c.redirecTo">{{c.answer1}} <br><br> {{c.answer2}}</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+</ion-card>
+
+</ion-content> 
+
+<ion-footer>
+  <ion-toolbar>
+    <app-tabs routerLink="/main"></app-tabs>
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,7 @@
+.no-scroll {
+  --overflow: hidden;
+}
+
 #container {
   text-align: center;
 
@@ -29,3 +33,155 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+
+.top{
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color:var(--tvb-color-tertiary);
+  z-index: 100;
+  animation-name: top-ani;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  // animation-delay: 1s;
+  animation-play-state: paused;
+}
+
+.bottom{
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--tvb-color-secondary);
+  // z-index: 100;
+  position: absolute;
+  animation-name: bot-ani;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  // animation-delay: 1s;
+  animation-play-state: paused;
+}
+
+
+
+.startbutton{
+  width: 250px;
+  height: 250px;
+  background-color: var(--tvb-color-primary);
+  border-radius: 100%;
+  left: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 30px var(--tvb-color-secondary);
+
+  animation-name: roll-button-ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  
+h1{
+  color: var(--tvb-color-text);
+}
+}
+//////////////////////////////////
+
+@keyframes glow{
+  0% { box-shadow: 0 0 -10px var(--tvb-color-text) }
+  40% { box-shadow: 0 0 20px var(--tvb-color-text) }
+  60% { box-shadow: 0 0 20px var(--tvb-color-text) }
+  100% { box-shadow: 0 0 -10px var(--tvb-color-text) }
+}
+
+
+@keyframes top-ani{
+
+100%{ margin-top: -100%; }
+}
+
+@keyframes bot-ani{
+
+  100%{ margin-bottom: -100%; }
+  }
+
+  @keyframes roll-button-ani{
+   
+
+    20%{
+      opacity: 1;
+      width: 100%;
+      height: 50%;
+      border-radius: 40%;
+    }
+
+
+    100%{
+  opacity: 0;
+  }
+  }
+  
+
+//Stickman animation
+//////////////////////////////////
+#leg_x5F_far{
+  // stroke: darkcyan;
+  animation-name: leg_far_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 245.742px 288.063px;
+  
+}
+@keyframes leg_far_ani{
+50%{transform: rotate(-40deg);
+  
+}
+}
+//////////////////////////////////
+#leg_x5F_close{
+  // stroke: darkcyan;
+  animation-name: leg_close_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 250.5px 294.358px;
+  
+}
+
+@keyframes leg_close_ani{
+  50%{transform: rotate(40deg);
+      
+  }
+  }
+//////////////////////////////////
+#armphone_group{
+  // stroke: darkcyan;
+  animation-name: arm_far_ani;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 236.294px 167.776px;
+  
+}
+
+@keyframes arm_far_ani{
+  50%{transform: rotate(-5deg);
+      
+  }
+  }
+//////////////////////////////////
+
+#arm_x5F_close{
+  // stroke: darkcyan;
+  animation-name: arm_close_ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 236.294px 167.776px;
+  
+}
+
+@keyframes arm_close_ani{
+  50%{transform: rotate(-25deg);
+      
+  }
+  }
+//////////////////////////////////
+

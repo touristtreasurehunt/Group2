@@ -74,6 +74,19 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+  /** Our added colors **/
+  --tvb-color-primary: #A50312;
+  --tvb-color-secondary: #034AA6;
+  --tvb-color-tertiary: #079DD8;
+  --tvb-color-text: #FEFEFF;
+  --tvb-color-contrast: #A7763C;
+
+  --tvb-color-header: #023474;
+  --tvb-color-body: #e4f4f7;
+  --tvb-color-border: #c1c1c1;
+  --tvb-color-buttons-answer: #1d2d33;
 }
 
 @media (prefers-color-scheme: dark) {

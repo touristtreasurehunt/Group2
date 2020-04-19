@@ -1,0 +1,379 @@
+#contentMap{
+    width: 100%;
+    height: 100%;
+}
+
+.noMapLoaded {
+    background-color: #edef92;
+    background-image: url(../../../assets/lostDream.jpg);
+    background-size: cover;
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Question Mark                               */
+/* -------------------------------------------------------------------------- */
+.questionMark {
+    position: absolute;
+    left: 47%;
+    top: 0px;
+
+    font-size: 50px;
+    color: red;
+    mix-blend-mode: multiply;
+    font-family: 'Anton', sans-serif;
+
+    transform: rotate(10deg);
+
+    animation: moveQuestionMark 2s linear infinite;
+}
+
+@keyframes moveQuestionMark {
+    0% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Lens Head                                 */
+/* -------------------------------------------------------------------------- */
+.lensHead {
+    margin: auto;
+    z-index: 2;
+
+    margin-top: 4rem;
+    width: 130px;
+    height: 80px;
+    border-radius: 50%;
+    background: silver; 
+    border: 1px rgb(87, 86, 86) solid;
+
+    
+}
+
+.lensHead .lensSubHead {
+    margin-top: 0.5rem;
+    margin-left: 0.6rem;
+    width: 110px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(190, 228, 243); 
+}
+
+.lensHead .lensSubHead .selfMoon {
+    position: absolute;
+    top: 90px;
+
+    height: 30px;
+    width: 30px;
+    background: radial-gradient(ellipse farthest-corner at 33% 100%, rgb(190, 228, 243) 45%, #f1f1de 47%);
+    background-size: 150% 100%;
+    //   border: 3px solid rgb(29, 27, 28);
+    border-radius: 50%;
+
+    margin-left: 4.5rem;
+
+    transform: rotate(90deg);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                               Lens Head Eyes                               */
+/* -------------------------------------------------------------------------- */
+.leftEye {
+    position: absolute;
+    top: 90px;
+    left: 148px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+}
+
+.closedLeftEye {
+    position: relative;
+    width: 25px;
+    // height: 25px;
+    border-radius: 50%;
+    background: rgb(190, 228, 243);
+
+    z-index: 1;
+
+    animation: closeEyes 4s linear infinite;
+}
+
+.irisLeftEye {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px rgb(93, 214, 56) solid;
+    background: black;
+
+    z-index: 0;
+}
+
+.rightEye {
+    position: absolute;
+    top: 90px;
+    right: 148px;
+
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+}
+
+.closedRightEye {
+    position: relative;
+    width: 25px;
+    // height: 25px;
+    border-radius: 50%;
+    background: rgb(190, 228, 243);
+
+    z-index: 1;
+
+    animation: closeEyes 4s linear infinite;
+}
+
+.irisRightEye {
+    position: absolute;
+    top: 10px;
+    left: 3px;
+
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 3px rgb(93, 214, 56) solid;
+    background: black;
+}
+
+@keyframes closeEyes {
+    0% {
+        // width: 0;
+        height: 0;
+    }
+    4% {
+        // width: 25px;
+        height: 25px;
+    }
+    8% {
+        // width: 0;
+        height: 0;
+    }
+    100% {
+        height: 0;
+    }
+  }
+
+/* -------------------------------------------------------------------------- */
+/*                                  Lens Body                                 */
+/* -------------------------------------------------------------------------- */
+.lensBody {
+    position: absolute;
+    top: 165px;
+    left: 33%;
+
+    z-index: 1;
+
+    width: 130px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px rgb(87, 86, 86) solid;
+    background: silver;
+
+    transform: rotate(90deg);
+}
+
+.lensSubBody {
+    position: absolute;
+    right: -1px;
+    bottom: -1.7px;
+    
+    z-index: 0;
+
+    width: 79px; 
+    height: 22px; 
+    background: #46210b;
+}
+
+.lensSubBody span{
+    width: 0; 
+    height: 0; 
+
+    border-left: 5px solid #ad5f5f;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.lensSubBody span:nth-child(1) {
+    margin-left: 10px;
+}
+
+.lensSubBody span:nth-child(2) {
+    margin-left: 15px;
+}
+
+.lensSubBody span:nth-child(3) {
+    margin-left: 20px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 Lens Hands                                 */
+/* -------------------------------------------------------------------------- */
+.lensHands {
+    position: absolute;
+    top: 165px;
+    left: 50%;
+
+}
+
+.rightHand {
+    position: relative;
+    top: -25px;
+    right: 22px;
+
+    transform: rotate(45deg);
+
+    width: 5px;
+    height: 85px;
+    background-color: black;
+}
+
+.rightArm {
+    position: absolute;
+    top: 45px;
+    left: 19px;
+
+    transform: rotate(55deg);
+
+    width: 5px;
+    height: 50px;
+    background-color: black;
+}
+
+.rightSubHand {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+
+    transform: rotate(125deg);
+
+    width: 5px;
+    height: 15px;
+    background-color: black;
+}
+
+.leftHand {
+    position: relative;
+    bottom: 155px;
+    right: -40px;
+
+    transform: rotate(225deg);
+
+    width: 5px;
+    height: 85px;
+    background-color: black;
+}
+
+.leftArm {
+    position: absolute;
+    top: 63px;
+    left: 23px;
+
+    transform: rotate(95deg);
+
+    width: 5px;
+    height: 50px;
+    background-color: black;
+}
+
+.leftSubHand {
+    position: absolute;
+    bottom: 40px;
+    left: 3px;
+
+    transform: rotate(95deg);
+
+    width: 5px;
+    height: 15px;
+    background-color: black;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Lens Legs                                 */
+/* -------------------------------------------------------------------------- */
+.lensLegs {
+    position: absolute;
+    bottom: 35px;
+    left: 180px;
+
+    transform: rotate(90deg);
+
+    width: 5px;
+    height: 40px;
+    background-color: black;
+}
+
+.leftLeg {
+    position: absolute;
+    bottom: -20px;
+    left: 17px;
+
+    transform: rotate(90deg);
+
+    width: 5px;
+    height: 40px;
+    background-color: black;
+}
+
+.leftFoot {
+    width: 25px; 
+    height: 10px; 
+    border: 2px solid black; 
+    background: black;
+    border-radius: 0 0 100px 100px;
+}
+
+.rightLeg {
+    position: absolute;
+    top: -20px;
+    left: 17px;
+
+    transform: rotate(90deg);
+
+    width: 5px;
+    height: 40px;
+    background-color: black;
+}
+
+.rightFoot {
+    position: absolute;
+    right: 0;
+
+    width: 25px; 
+    height: 10px; 
+    border: 2px solid black; 
+    background: black;
+    border-radius: 0 0 100px 100px;
+}

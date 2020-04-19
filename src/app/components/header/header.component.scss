@@ -1,0 +1,37 @@
+.alert-input-group.sc-ion-alert-ios, .alert-message.sc-ion-alert-ios {
+    text-align: unset;
+}
+
+
+
+.body-header {
+    --ion-color-primary: white;
+    --ion-color-primary-rgb: 56, 128, 255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #3171e0;
+    --ion-color-primary-tint: #4c8dff;
+
+    /** secondary **/
+    --ion-color-secondary: white;
+    --ion-color-secondary-rgb: 61, 194, 255;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #36abe0;
+    --ion-color-secondary-tint: #50c8ff;
+}
+
+.ion-back-button-header {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.ion-toolbar-no-land-page {
+    // --background: var(--tvb-color-primary);
+    --background: var(--tvb-color-header);
+}
+
+.ion-toolbar-no-land-page, span {
+    color: var(--tvb-color-header);;
+}
